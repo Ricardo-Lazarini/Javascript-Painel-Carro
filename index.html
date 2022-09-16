@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Painel</title>
+</head>
+<body>
+	<!-- Simulador de botao fisico do lado esquerdo -->
+	<div class="esquerda">
+		<img src="img/cima.png" id="cima">
+		<button id="abrirMenu">Menu</button>
+		<!-- <button id="abrirMenuCores">Cores</button> -->
+		<button id="selecionar">Selecionar</button>
+		<img src="img/baixo.png" id="baixo">
+	</div>
+	<!-- Corpo de todos os conteudos do painel -->
+	<div class="painel">
+		<img src="img/logo.png" id="logoAbertura"> <!-- Ira aparecer na abertura do painel -->
+		<div class="painel-body">
+			<!-- Icones de controles do veiculo -->
+			<div class="icones">
+				<img src="img/cima.png" id="seta1">
+				<img src="img/abs.png" id="abs">
+				<img src="img/qxq.png" id="qxq">
+				<img src="img/reduzida.png" id="reduzida">
+				<img src="img/assistente.png" id="assistente">
+				<img src="img/controletracao.png" id="controletracao">
+				<img src="img/cima.png" id="seta2">
+			</div>
+			<!-- Corpo do contagiro -->
+			<div class="contagiro">
+				<img src="img/contagiro.png">
+				<img src="img/ponteiro.png" id="ponteiroContagiro">	
+				<h5 id="marcha">P</h5>
+			</div>
+			<!-- Corpo do velocimetro -->
+			<div class="velocimetro">
+				<img src="img/velocimetro.png" id="velocimetro">	
+				<img src="img/ponteiro.png" id="ponteiroVelocimetro">	
+			</div>
+			<!-- Painel de combustivel -->
+			<div class="painelGasolina">
+				<div id="g1"></div>
+				<div id="g2"></div>
+				<div id="g3"></div>
+				<div id="g4"></div>
+				<div id="g5"></div>
+				<div id="g6"></div>
+				<div id="g7"></div>
+				<div id="g8"></div>
+				<img src="img/iconeCombustivel.png">
+			</div>
+			<!-- Painel de gps -->
+			<div class="gps">	
+				<img src="img/maps.png">
+			</div>
+			<!-- Painel central entre conta giros e velocimetro   -->
+			<div class="painelCentral">
+				<div class="horaTemp">
+					<h2><small>Hr</small> 14:25</h2>
+					<h2> <small>T°</small> 12°C</h2>
+				</div>
+				<div class="velocimetroDigital">
+					<img src="img/zero.png">
+					<img src="img/zero.png">
+					<img src="img/zero.png">
+					<h4>Km/h</h4>
+					<h5>000075258<small>9</small></h5>
+				</div>
+			</div>
+			<!-- Painel de temperatura -->
+			<div class="painelTemperatura">
+				<div id="t1"></div>
+				<div id="t2"></div>
+				<div id="t3"></div>
+				<div id="t4"></div>
+				<div id="t5"></div>
+				<div id="t6"></div>
+				<div id="t7"></div>
+				<div id="t8"></div>
+				<img src="img/temperatura.png">
+			</div>
+			<!-- Menu de configurações do veiculo -->
+			<div class="menu">
+				<ul>
+					<li id="tituloMenu">Configurações</li>
+					<li id="l1">GPS</li>
+					<li id="l2">Acionar ABS <small id="smabs"></small></li>
+					<li id="l3">Acionar 4X4 <small id="smqxq"></small></li>
+					<li id="l4">Acionar reduzida <small id="smredu"></small></li>
+					<li id="l5">Acionar assistente de estacionamento <small id="smassi"></small></li>
+					<li id="l6">Acionar controle de tração <small id="cont"></small></li>
+					<li id="l7">Verificar pressão dos pneus</li>
+					<li id="l8">Verificar temperatura do óleo</li>
+					<li id="l9">Verificar pressão das turbinas</li>
+					<li id="l10">Alterar cores da tela</li>
+				</ul>
+				<img src="img/caminhonete.png" id="caminhonete">
+				<div id="descricao">
+					<img src="img/pneu.png" id="pneu">
+					<img src="img/oleo.png" id="oleo">
+					<img src="img/turbina.png" id="turbina">
+					<ul>
+						<li id="item"></li>
+						<li class="itensdesc"></li>
+						<li class="itensdesc"></li>
+						<li class="itensdesc"></li>
+						<li class="itensdesc"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Logo do da marca -->
+			<div class="logo">
+				<h2> Raptor <small> SS </small></h2>
+			</div>
+	</div> <!-- end painel body -->
+	</div> <!-- end painel -->
+	<!-- Simulador de botões fisicos da direita -->
+	<div class="rightt">
+		<button id="start">Start</button>
+	</div> <!-- end right -->
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
